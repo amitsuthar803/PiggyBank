@@ -78,6 +78,8 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+const loginBox = document.querySelector('.login_data');
+
 /////////////////////////////////////////////////
 // Functions
 const formatMovementDate = function (date, locale) {
@@ -207,7 +209,6 @@ const startLogOutTimer = function () {
       inputCloseUsername.disabled = true;
       inputClosePin.disabled = true;
 
-
       btnTransfer.disabled = true;
       btnLoan.disabled = true;
       btnClose.disabled = true;
@@ -266,6 +267,7 @@ btnLogin.addEventListener('click', function (e) {
       currentAccount.owner.split(' ')[0]
     }`;
     containerApp.style.opacity = 100;
+    loginBox.style.display = 'none';
 
     //creating date and time using intr api #2 method after new Date()
     const option = {

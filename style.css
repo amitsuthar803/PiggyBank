@@ -190,7 +190,7 @@ nav {
 
 .summary__value--in,
 .summary__value--interest {
-  color: #118C4F;
+  color: #118c4f;
 }
 
 .summary__value--out {
@@ -317,10 +317,22 @@ h2 {
   font-weight: 500;
 }
 
-.btn--sort{
+.btn--sort {
   color: #06d6a0;
 }
 
-.summary__label{
-  color: #e7ecef; 
+.summary__label {
+  color: #e7ecef;
+}
+
+.login_data {
+  text-align: center;
+  font-size: 1.5rem;
+  background: -webkit-linear-gradient(#11998e, #38ef7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid #11998e;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
 }
